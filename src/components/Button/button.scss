@@ -1,0 +1,30 @@
+.button {
+  background-color: rgb(15, 214, 208);
+  color: rgb(14, 14, 14);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+  color: rgb(14, 14, 14);
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+
+  &:hover {
+    background-color: #00a8c0;
+    color: rgb(255, 255, 255);
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}

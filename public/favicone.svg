@@ -1,0 +1,44 @@
+<svg width="180.600098" height="178.600098" viewBox="0 0 180.6 178.6" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_8_540_dd" x="0.000000" y="0.000000" width="180.600098" height="178.600098" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feMorphology radius="1" in="" result="BackgroundImageFix"/>
+			<feOffset dx="4" dy="4"/>
+			<feGaussianBlur stdDeviation="5.43333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.058824 0 0 0 0 0.83922 0 0 0 0 0.81569 0 0 0 0.29 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<filter id="filter_2_163_dd" x="52.800049" y="129.800049" width="67.000000" height="10.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="1"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.058824 0 0 0 0 0.83922 0 0 0 0 0.81569 0 0 0 0.65 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<filter id="filter_8_541_dd" x="70.386963" y="54.434814" width="33.539062" height="52.365234" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="46.3333"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_8_540_dd)">
+		<rect id="Rectangle 20" x="13.800049" y="13.800049" rx="34.000000" width="145.000000" height="143.000000" fill="#040404" fill-opacity="1.000000"/>
+		<rect id="Rectangle 20" x="13.800049" y="13.800049" rx="34.000000" width="145.000000" height="143.000000" stroke="#0FD6D0" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	</g>
+	<g filter="url(#filter_2_163_dd)">
+		<line id="Линия 1" x1="57.800049" y1="133.800049" x2="114.800049" y2="133.800049" stroke="#0FD6D0" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	</g>
+	<g filter="url(#filter_8_541_dd)">
+		<path id="F" d="M79.86 106.8L70.38 106.8L70.38 54.43L103.92 54.43L103.92 62.38L79.86 62.38L79.86 76.6L101.62 76.6L101.62 84.56L79.86 84.56L79.86 106.8Z" fill="#0FD6D0" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
