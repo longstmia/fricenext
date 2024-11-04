@@ -1,10 +1,11 @@
 import "./hero.scss";
+import AnimatedBackground from "@/components/AnimatedBackground/AnimatedBackground";
 
 export default function Hero() {
   return (
     <section className="hero">
       <img src="/online.svg" alt="Описание" className="hero_image" />
-
+      <AnimatedBackground />
       <h1 className="hero_title">
         ПРОГРАММИРОВАНИЕ <br /> для детей
       </h1>

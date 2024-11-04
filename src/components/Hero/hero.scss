@@ -64,7 +64,7 @@ $background-color: #ffffff;
 
   &_cta {
     position: relative;
-    width: 100%;
+    width: 55%;
     text-align: center;
     z-index: 20;
 
@@ -88,11 +88,14 @@ $background-color: #ffffff;
   &_subline-box {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    align-items: center;
+    max-width: 80%;
+
     padding-top: 10%;
     border-radius: 32px;
     .subline_img {
       height: 6rem;
+      width: 100%;
       border-radius: 64px;
     }
   }
