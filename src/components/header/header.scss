@@ -4,15 +4,15 @@ $button-hover-color: #00a8c0;
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == tablet {
-    @media (max-width: 1337px) {
+    @media (max-width: 1400px) {
       @content;
     }
   } @else if $breakpoint == mobile {
-    @media (max-width: 803px) {
+    @media (max-width: 768px) {
       @content;
     }
   } @else if $breakpoint == small-mobile {
-    @media (max-width: 480px) {
+    @media (max-width: 575px) {
       @content;
     }
   }
@@ -22,7 +22,7 @@ $button-hover-color: #00a8c0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 48px 64px;
+  padding-top: 64px;
   background-color: $background-color;
   @include respond-to(mobile) {
     padding: 15px 32px;
@@ -32,18 +32,6 @@ $button-hover-color: #00a8c0;
     img {
       width: 182px;
       margin-top: 8px;
-      @include respond-to(tablet) {
-        width: 130px;
-        margin-top: 8px;
-      }
-
-      @include respond-to(mobile) {
-        width: 110px;
-      }
-
-      @include respond-to(small-mobile) {
-        width: 110px;
-      }
     }
   }
 
@@ -60,18 +48,6 @@ $button-hover-color: #00a8c0;
     margin: 0;
     padding: 0;
 
-    @include respond-to(tablet) {
-      gap: 20px;
-    }
-
-    @include respond-to(mobile) {
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-      margin-top: 10px;
-      display: none;
-    }
-
     a {
       text-decoration: none;
       color: rgb(14, 14, 14);
@@ -85,46 +61,14 @@ $button-hover-color: #00a8c0;
       &:hover {
         color: $primary-color;
       }
-
-      @include respond-to(tablet) {
-        font-size: 16px;
-
-        background-color: rgb(14, 14, 14);
-        padding: 10px 20px;
-        border: none;
-        border-radius: 32px;
-        cursor: pointer;
-        font-weight: bold;
-
-        transition: background-color 0.3s ease;
-
-        color: rgb(15, 214, 208);
-      }
-
-      @include respond-to(small-mobile) {
-        font-size: 14px;
-      }
     }
   }
   .header_nav li:nth-child(-n + 2) {
-    @include respond-to(tablet) {
-      display: none;
-    }
   }
 
   &_cta {
     display: flex;
     align-items: center;
     gap: 86px;
-
-    @include respond-to(tablet) {
-      gap: 20px;
-    }
-
-    @include respond-to(mobile) {
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 10px;
-    }
   }
 }

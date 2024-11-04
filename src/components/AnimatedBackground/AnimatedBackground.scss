@@ -1,0 +1,102 @@
+// Переменные
+$duration: 120s;
+$height: 10%;
+
+// Основной контейнер для облаков
+#Clouds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 30%;
+  overflow: hidden;
+  animation: FadeIn 3.1s ease-out;
+  user-select: none;
+  z-index: 10;
+}
+
+// Анимация для плавного появления
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Облако
+.Cloud {
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 70px;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: Float, FadeFloat;
+  z-index: 10;
+}
+
+// Облако переднего плана
+.Cloud.Foreground {
+  height: $height;
+  min-height: 20px;
+  z-index: 10;
+}
+
+.Cloud.Background {
+  height: $height / 1.1;
+  min-height: 8px;
+  animation-duration: $duration * 1.75;
+}
+
+@keyframes Float {
+  from {
+    transform: translateX(100%) translateZ(0);
+  }
+  to {
+    transform: translateX(-15%) translateZ(0);
+  }
+}
+@keyframes FadeFloat {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  5%,
+  90% {
+    opacity: 1;
+  }
+}
+@mixin Cloud-Loop($delay, $i) {
+  @if $i > 0 {
+    .Cloud:nth-child(#{$i}) {
+      animation-delay: ($delay * $i);
+      top: $i * 6%;
+    }
+    .Cloud.Foreground:nth-child(#{$i}) {
+      animation-duration: ($duration - ($i * 4));
+      height: ($height + ($i * 2.5));
+    }
+    .Cloud.Background:nth-child(#{$i}) {
+      animation-duration: ($duration * 1.25 - ($i * 4));
+      height: (($height / 1.1) - ($i * 1.25));
+    }
+
+    @include Cloud-Loop($delay, ($i - 1));
+  }
+}
+@include Cloud-Loop(($duration / 6.5) * -1, 10);
+
+.Cloud {
+  background-image: url("/cloud-one.png");
+}
+
+.Cloud.Background {
+  background-image: url("/cloud-two.png");
+}

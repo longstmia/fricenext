@@ -1,0 +1,9 @@
+body {
+  padding-left: 32px;
+  padding-right: 32px;
+
+  @media (min-width: 1024px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}

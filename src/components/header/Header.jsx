@@ -25,7 +25,7 @@ function Header() {
             <a href="#contacts">Контакты</a>
           </li>
         </ul>
-        <Button text="ЗАПИСАТЬСЯ НА ЗАНЯТИЕ" />
+        <Button text="ЗАПИСАТЬСЯ" />
       </div>
     </header>
   );
